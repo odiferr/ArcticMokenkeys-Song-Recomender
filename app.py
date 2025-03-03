@@ -1,9 +1,9 @@
 from flask import Flask, render_template, request , flash
 import sqlite3
-from Main import recommend_songs_hybrid, fetch_songs_from_db  # Replace with your actual module name
+from Main import recommend_songs_hybrid, fetch_songs_from_db  
 
 app = Flask(__name__)
-app.secret_key = 'DDrummer750'  # Necessary for flash messages
+app.secret_key = ''  #Your secret key for session management. Necessary for flash messages and secure cookies
 
 # Database Setup
 DATABASE_NAME = "arctic_monkeys_lyrics.db"
