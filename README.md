@@ -76,8 +76,8 @@ Enter your input (e.g., a line of lyrics or a mood) and let the system recommend
 **Project Structure**
 ├── app.py                    # Flask application
 ├── arctic_monkeys_lyrics.db  # SQLite database containing Arctic Monkeys lyrics
-├── static/                   # Static files (e.g., CSS, JavaScript, images)
-├── templates/                # HTML templates for rendering pages
+├── static/styles             # Static files (Contains the CSS file)
+├── templates/index.html      # HTML templates for rendering pages
 ├── Main.py                   # Main logic for song recommendation system
 ├── requirements.txt          # List of dependencies
 └── README.md                 # Project documentation
