@@ -105,7 +105,7 @@ def recommend_songs_hybrid(user_input, songs):
     # Step 2: Score songs using sentiment analysis
     sentiment_recommendations = recommend_songs_sentiment(user_input, songs)
 
-    # Step 3: Combine scores (e.g., weighted average)
+    # Step 3: Combine scores (weighted average)
     combined_scores = {}
     for title, score in tfidf_recommendations:
         combined_scores[title] = combined_scores.get(title, 0) + score * 0.6  # Weight for TF-IDF
@@ -115,7 +115,7 @@ def recommend_songs_hybrid(user_input, songs):
     # Sort songs by combined score (descending)
     scored_songs = sorted(combined_scores.items(), key=lambda x: x[1], reverse=True)
 
-    # Return top recommendations
+    # Return top 2 recommendations
     return scored_songs[:2]
 
 
@@ -132,7 +132,7 @@ def main():
     if not recommendations:
         print("No songs found matching your description. Try again!")
     else:
-        print("\n🎵 Recommended Songs:")
+        print("\n Recommended Songs:")
         for i, (title) in enumerate(recommendations, start=1):
             print(f"{i}. {title} ")
 
