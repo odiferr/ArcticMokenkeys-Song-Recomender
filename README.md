@@ -1,7 +1,7 @@
 
 ## ArcticMokenkeys-Song-Recomender
 
-Welcome to the **Arctic Mokenkeys-Song-Recomender Song Recommendation System** This hybrid system combines **TF-IDF** and **Sentiment Analysis** to recommend songs that match your vibe. Whether you're a music lover or a data science enthusiast, this project is designed to bring the best of both worlds together.
+Welcome to the **Arctic Mokenkeys-Song-Recomender System** This hybrid system combines **TF-IDF** and **Sentiment Analysis** to recommend songs that match your vibe. Whether you're a music lover or a python enthusiast, this project is designed to bring the best of both worlds together.
 
 
 ## Why Arctic Monkeys?
